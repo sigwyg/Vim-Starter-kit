@@ -1,0 +1,10 @@
+# general
+.DS_Store
+*.zip
+*.tar.gz
+*.exe
+*.bz2
+ 
+# backup
+*~
+*.bak
