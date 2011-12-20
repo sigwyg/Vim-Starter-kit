@@ -59,9 +59,9 @@ gc 直前に編集したテキストを再選択（ヤンクしたテキスト�
 
 ## 備考
 
-zencodingが生成するタグのインデントは、336行目で調節可能。
+zencodingが生成するタグのインデントは、325行目で調節可能。
 
-自動補完(NeoComplCache)を向こうにする場合は、.vimrc 349行目で
+自動補完(NeoComplCache)を向こうにする場合は、.vimrc 338行目で
 
     let g:neocomplcache_enable_at_startup = 0
 
