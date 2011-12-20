@@ -71,6 +71,12 @@ set splitbelow
 set splitright
 set visualbell
 
+" backup
+set backup
+set swapfile
+set backupdir=~/.vim/backup
+set directory=~/.vim/swap
+
 "}}}
 
 
