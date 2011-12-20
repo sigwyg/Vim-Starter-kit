@@ -1,0 +1,15 @@
+:Fontzoom	fontzoom.txt	/*:Fontzoom*
+<Plug>(fontzoom-learger)	fontzoom.txt	/*<Plug>(fontzoom-learger)*
+<Plug>(fontzoom-smaller)	fontzoom.txt	/*<Plug>(fontzoom-smaller)*
+fontzoom	fontzoom.txt	/*fontzoom*
+fontzoom-changelog	fontzoom.txt	/*fontzoom-changelog*
+fontzoom-commands	fontzoom.txt	/*fontzoom-commands*
+fontzoom-contents	fontzoom.txt	/*fontzoom-contents*
+fontzoom-interface	fontzoom.txt	/*fontzoom-interface*
+fontzoom-introduction	fontzoom.txt	/*fontzoom-introduction*
+fontzoom-key-mappings	fontzoom.txt	/*fontzoom-key-mappings*
+fontzoom-limitation	fontzoom.txt	/*fontzoom-limitation*
+fontzoom-settings	fontzoom.txt	/*fontzoom-settings*
+fontzoom.txt	fontzoom.txt	/*fontzoom.txt*
+g:fontzoom_no_default_key_mappings	fontzoom.txt	/*g:fontzoom_no_default_key_mappings*
+g:fontzoom_pattern	fontzoom.txt	/*g:fontzoom_pattern*
