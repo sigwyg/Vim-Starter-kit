@@ -40,21 +40,22 @@ Vim Starter-Kit
 <tr><th>bd</th><td>現在のバッファを削除</td></tr>
 <tr><th>gc</th><td>直前に編集したテキストを再選択（ヤンクしたテキストなど）</td></tr>
 
-<table>
+<tr><th></th><td></td></tr>
+
 <tr><th>&lt;Space-r&gt;</th><td>表示中のファイルをリロード(VimScript)</td></tr>
 <tr><th>&lt;Space-v&gt;</th><td>.vimrcと.gvimrcをリロード</td></tr>
 <tr><th>&lt;Space-,&gt;</th><td>.vimrcに切替</td></tr>
 <tr><th>&lt;Space-.&gt;</th><td>.gvimrcに切替</td></tr>
-</table>
 
-<table>
+<tr><th></th><td></td></tr>
+
 <tr><th>:CD</th><td>現在ファイルの階層に移動</td></tr>
 <tr><th>:Utf8</th><td>utf-8で再読込</td></tr>
 <tr><th>:Sjis</th><td>sjisで再読込</td></tr>
 <tr><th>:Euc</th><td>euc-jpで再読込</td></tr>
-</table>
 
-<table>
+<tr><th></th><td></td></tr>
+
 <tr><th>&lt;Esc&gt;&lt;Esc&gt;</th><td>検索ハイライトを解除</td></tr>
 <tr><th>&lt;F3&gt;</th><td>NERDTree起動</td></tr>
 <tr><th>&lt;F5&gt;</th><td>Gundo起動</td></tr>
