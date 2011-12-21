@@ -180,6 +180,9 @@ augroup MyAutoCmd
 
     " Custom folding
     autocmd BufEnter * if &filetype == "javascript" | set foldmarker={,} | set foldlevel=3 | set foldcolumn=7 | endif
+    
+    " for Sass.vim
+    autocmd BufRead,BufNewFile *.sass setfiletype sass 
 augroup END
 
 "}}}
@@ -399,6 +402,13 @@ function! s:javascript_filetype_settings()
   autocmd CursorMoved  <buffer> call jslint#message()
 endfunction
 
+"}}}
+
+
+" -----------------------------------------------------------------------
+" QuickBuf: {{{
+"  - https://github.com/vim-scripts/QuickBuf
+:let g:qb_hotkey = "<F4>"
 "}}}
 
 
