@@ -57,8 +57,9 @@ Vim Starter-Kit
 <tr><th>&nbsp;</th><td>&nbsp;</td></tr>
 
 <tr><th>&lt;Esc&gt;&lt;Esc&gt;</th><td>検索ハイライトを解除</td></tr>
-<tr><th>&lt;F3&gt;</th><td>NERDTree起動</td></tr>
-<tr><th>&lt;F5&gt;</th><td>Gundo起動</td></tr>
+<tr><th>&lt;F3&gt;</th><td>NERDTree展開/格納</td></tr>
+<tr><th>&lt;F4&gt;</th><td>JSLint手動チェック</td></tr>
+<tr><th>&lt;F5&gt;</th><td>Gundo展開/格納</td></tr>
 <tr><th>&lt;F12&gt;</th><td>PasteモードのOn/Off</td></tr>
 </table>
 
@@ -67,9 +68,37 @@ Vim Starter-Kit
 
 zencodingが生成するタグのインデントは、325行目で調節可能。
 
-自動補完(NeoComplCache)を向こうにする場合は、.vimrc 338行目で
+自動補完(NeoComplCache)を無効にする場合は、.vimrc 338行目で
 
     let g:neocomplcache_enable_at_startup = 0
 
 ...とすれば良い。
 
+JSLintの解析結果はQuickfixに追加されるので、:copenや:cnで確認できる。
+
+## Tips
+
+Vimが自動生成するバックアップ・ファイル等は通常はindex.html~ のように
+
+    hoge_dir
+    ├─index.html 
+    └─index.html~
+
+...のように編集ファイルと同じディレクトリに保存される。
+以下のように.vimrcに記述すると、指定ディレクトリにバックアップ・ファイルを纏めることができる。
+
+    " backup
+    set backup
+    set swapfile
+    set backupdir=~/.vim/backup
+    set directory=~/.vim/swap
+
+また、Vimの優秀なUndoツリーを視覚化するGundo.vimと、以下の設定は相性が良い。
+
+    if has('persistent_undo')
+        set undofile
+        set undodir=./.vimundo,~/.vim/undo
+    endif
+
+この設定はUndo履歴をファイルに書き出すことで、永続的なUndoを可能とする。
+つまり、通常はバッファ削除時に破棄されるUndo履歴を保持する。詳細は:h undo-persistenceにて。
