@@ -384,13 +384,14 @@ nnoremap <F5> :GundoToggle<CR>
 " NERD_tree.vim: {{{
 "  - https://github.com/scrooloose/nerdtree
 "
-nnoremap <F3> :NERDTree<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
 "}}}
 
 
 " -----------------------------------------------------------------------
 " jslint.vim: {{{
 "  - https://github.com/basyura/jslint.vim
+"  - :copen -> :cnext ...
 augroup jslint
     autocmd! jslint
     autocmd FileType javascript call s:javascript_filetype_settings()
@@ -402,6 +403,7 @@ function! s:javascript_filetype_settings()
   autocmd CursorMoved  <buffer> call jslint#message()
 endfunction
 
+nnoremap <F4> :JSLint<CR> 
 "}}}
 
 
