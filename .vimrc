@@ -75,6 +75,18 @@ set visualbell
 
 
 " -----------------------------------------------------------------------
+" QuickStart: {{{
+"  - gundo.vim    (https://github.com/sjl/gundo.vim)
+"  - jslint.vim   (https://github.com/basyura/jslint.vim)
+"  - NERD_tree.vim(https://github.com/scrooloose/nerdtree)
+"
+nnoremap <F3> :NERDTreeToggle<CR>
+nnoremap <F4> :JSLint<CR> 
+nnoremap <F5> :GundoToggle<CR>
+"}}}
+
+
+" -----------------------------------------------------------------------
 " Keymap:{{{
 " --------------------
 
@@ -373,22 +385,6 @@ inoremap <expr><C-p> pumvisible() ? "\<C-p>" : "\<C-p>\<C-n>"
 
 
 " -----------------------------------------------------------------------
-" gundo.vim: {{{
-"  - https://github.com/sjl/gundo.vim
-"
-nnoremap <F5> :GundoToggle<CR>
-"}}}
-
-
-" -----------------------------------------------------------------------
-" NERD_tree.vim: {{{
-"  - https://github.com/scrooloose/nerdtree
-"
-nnoremap <F3> :NERDTreeToggle<CR>
-"}}}
-
-
-" -----------------------------------------------------------------------
 " jslint.vim: {{{
 "  - https://github.com/basyura/jslint.vim
 "  - :copen -> :cnext ...
@@ -403,7 +399,6 @@ function! s:javascript_filetype_settings()
   autocmd CursorMoved  <buffer> call jslint#message()
 endfunction
 
-nnoremap <F4> :JSLint<CR> 
 "}}}
 
 
