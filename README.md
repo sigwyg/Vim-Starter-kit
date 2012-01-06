@@ -77,7 +77,7 @@ Vim Starter-Kit
 <tr><th>&lt;C-h&gt;/&lt;BS&gt;</th><td>オムニ補完のポップアップを消す</td></tr>
 </table>
 
-※1: 補完ポップアップでの上下移動は &lt;C-n&gt;(↓)/&lt;C-p&gt;(↑)
+※1: 補完ポップアップでの上下移動は &lt;C-n&gt;が↓、&lt;C-p&gt;が↑<br />
 ※2: html5.vimのオムニ補完はVimネイティブのオムニ補完を使っているので、&lt;C-j&gt;から起動する。
 
 
