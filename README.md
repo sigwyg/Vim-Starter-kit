@@ -43,7 +43,8 @@ Vim Starter-Kit
 <tr><th>&lt;F4&gt;</th><td>JSLint手動チェック</td></tr>
 <tr><th>&lt;F5&gt;</th><td>Gundo展開/格納</td></tr>
 <tr><th>&lt;F12&gt;</th><td>PasteモードのOn/Off</td></tr>
-<tr><th>&lt;Esc&gt;&lt;Esc&gt;</th><td>検索ハイライトを解除</td></tr>
+
+<tr><th>&nbsp;</th><td>&nbsp;</td></tr>
 
 <tr><th>bp</th><td>1つ前のバッファに切替</td></tr>
 <tr><th>bn</th><td>1つ次のバッファに切替</td></tr>
@@ -52,6 +53,7 @@ Vim Starter-Kit
 
 <tr><th>&nbsp;</th><td>&nbsp;</td></tr>
 
+<tr><th>&lt;Esc&gt;&lt;Esc&gt;</th><td>検索ハイライトを解除</td></tr>
 <tr><th>&lt;Space-r&gt;</th><td>表示中のファイルをリロード(VimScript)</td></tr>
 <tr><th>&lt;Space-v&gt;</th><td>.vimrcと.gvimrcをリロード</td></tr>
 <tr><th>&lt;Space-,&gt;</th><td>.vimrcに切替</td></tr>
