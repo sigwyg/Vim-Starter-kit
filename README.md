@@ -7,6 +7,7 @@ Vim Starter-Kit
     │   └── pathogen.vim
     ├── bundle
     │   ├── gundo.vim
+    │   ├── html5.vim/
     │   ├── jslint.vim
     │   ├── neocomplcache
     │   ├── nerdtree
@@ -16,11 +17,14 @@ Vim Starter-Kit
     │   ├── vim-fontzoom
     │   ├── vim-qfreplace
     │   ├── vim-surround
+    │   ├── scss-syntax.vim/
     │   └── zencoding-vim
     ├── colors
     │   └── ir_black.vim
-    └── ftplugin
-        └── html.vim
+    ├── ftplugin
+    │   └── html.vim
+    └── plugin
+        └─ endtagcomment.vim
 
 1. Macならホームディレクトリ(~/)に。
    WinならGVimフォルダ内のvimfilesにコピったり、\_vimrcとして設置してください。
@@ -29,7 +33,7 @@ Vim Starter-Kit
 ※プラグインはPathogenで管理しています。
 
 
-## キーマップ
+## キーマップ(Normal mode)
 
 (練習用)十字キーの封印<br />
 (練習用)&lt;C-c&gt;の封印
@@ -62,6 +66,19 @@ Vim Starter-Kit
 <tr><th>&lt;F5&gt;</th><td>Gundo展開/格納</td></tr>
 <tr><th>&lt;F12&gt;</th><td>PasteモードのOn/Off</td></tr>
 </table>
+
+
+## キーマップ(insert-mode)
+
+<table>
+<tr><th>&lt;C-p&gt;</th><td>Vimのキーワード補完を手動起動</td></tr>
+<tr><th>&lt;C-j&gt;</th><td>Vimのオムニ補完を手動起動</td></tr>
+<tr><th>&lt;C-n&gt;</th><td>NeoComPlcacheの手動起動</td></tr>
+<tr><th>&lt;C-h&gt;/&lt;BS&gt;</th><td>オムニ補完のポップアップを消す</td></tr>
+</table>
+
+※1: 補完ポップアップでの上下移動は &lt;C-n&gt;(↓)/&lt;C-p&gt;(↑)
+※2: html5.vimのオムニ補完はVimネイティブのオムニ補完を使っているので、&lt;C-j&gt;から起動する。
 
 
 ## 備考

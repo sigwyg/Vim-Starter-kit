@@ -101,10 +101,8 @@ inoremap <Right> <Nop>
 
 " practice <Esc>
 noremap <C-c> <Nop>
-nnoremap <C-j> <Esc>
-"inoremap jj <Esc>
 inoremap <C-c> <Nop>
-inoremap <C-j> <Esc>
+"inoremap jj <Esc>
 
 " move
 nnoremap zl zL
@@ -375,11 +373,9 @@ inoremap <expr><C-l> neocomplcache#complete_common_string()
 inoremap <expr><CR> pumvisible() ? "\<C-y>\<CR>X\<BS>" : "\<CR>X\<BS>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y> neocomplcache#smart_close_popup()."\<C-y>"
-inoremap <expr><C-e> neocomplcache#smart_close_popup()."\<C-e>"
 inoremap <expr><C-n> pumvisible() ? "\<C-n>" : "\<C-x>\<C-u>\<C-p>"
 inoremap <expr><C-p> pumvisible() ? "\<C-p>" : "\<C-p>\<C-n>"
-"inoremap <expr><C-j> &filetype == 'vim' ? "\<C-x>\<C-v>\<C-p>" : "\<C-x>\<C-o>\<C-p>"
+inoremap <expr><C-j> &filetype == 'vim' ? "\<C-x>\<C-v>\<C-p>" : "\<C-x>\<C-o>\<C-p>"
 
 "}}}
 
@@ -403,6 +399,16 @@ endfunction
 
 
 " -----------------------------------------------------------------------
+" html5.vim: {{{
+"  - https://github.com/othree/html5.vim
+let g:html5_event_handler_attributes_complete = 1
+let g:html5_rdfa_attributes_complete = 1
+let g:html5_microdata_attributes_complete = 1
+let g:html5_aria_attributes_complete = 1
+"}}}
+
+
+" -----------------------------------------------------------------------
 " QuickBuf: {{{
 "  - https://github.com/vim-scripts/QuickBuf
 :let g:qb_hotkey = "<F4>"
@@ -411,6 +417,7 @@ endfunction
 
 " -----------------------------------------------------------------------
 " Like :CdCurrent {{{
+"  - http://vim-users.jp/2009/09/hack69/
 "  - :CD
 "
 command! -nargs=? -complete=dir -bang CD  call s:ChangeCurrentDir('<args>', '<bang>') 
