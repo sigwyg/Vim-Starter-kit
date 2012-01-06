@@ -39,6 +39,12 @@ Vim Starter-Kit
 (練習用)&lt;C-c&gt;の封印
 
 <table>
+<tr><th>&lt;F3&gt;</th><td>NERDTree展開/格納</td></tr>
+<tr><th>&lt;F4&gt;</th><td>JSLint手動チェック</td></tr>
+<tr><th>&lt;F5&gt;</th><td>Gundo展開/格納</td></tr>
+<tr><th>&lt;F12&gt;</th><td>PasteモードのOn/Off</td></tr>
+<tr><th>&lt;Esc&gt;&lt;Esc&gt;</th><td>検索ハイライトを解除</td></tr>
+
 <tr><th>bp</th><td>1つ前のバッファに切替</td></tr>
 <tr><th>bn</th><td>1つ次のバッファに切替</td></tr>
 <tr><th>bd</th><td>現在のバッファを削除</td></tr>
@@ -59,12 +65,6 @@ Vim Starter-Kit
 <tr><th>:Euc</th><td>euc-jpで再読込</td></tr>
 
 <tr><th>&nbsp;</th><td>&nbsp;</td></tr>
-
-<tr><th>&lt;Esc&gt;&lt;Esc&gt;</th><td>検索ハイライトを解除</td></tr>
-<tr><th>&lt;F3&gt;</th><td>NERDTree展開/格納</td></tr>
-<tr><th>&lt;F4&gt;</th><td>JSLint手動チェック</td></tr>
-<tr><th>&lt;F5&gt;</th><td>Gundo展開/格納</td></tr>
-<tr><th>&lt;F12&gt;</th><td>PasteモードのOn/Off</td></tr>
 </table>
 
 
@@ -83,7 +83,13 @@ Vim Starter-Kit
 
 ## 備考
 
-zencodingが生成するタグのインデントは、325行目で調節可能。
+zencodingが生成するタグのインデントは、以下の部分で調節可能(引用符の中にインデント)。
+
+    let g:user_zen_settings = {
+    \  'html' : {
+    \    'indentation' : '    '
+    \  },
+    \}
 
 自動補完(NeoComplCache)を無効にする場合は、.vimrc 338行目で
 
