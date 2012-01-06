@@ -82,6 +82,14 @@ Vim Starter-Kit
 ※1: 補完ポップアップでの上下移動は &lt;C-n&gt;が↓、&lt;C-p&gt;が↑<br />
 ※2: html5.vimのオムニ補完はVimネイティブのオムニ補完を使っているので、&lt;C-j&gt;から起動する。
 
+<table>
+<tr><th>,ta</th><td>endtagcomment.vim: idとclassを出力</td></tr>
+<tr><th>,ti</th><td>endtagcomment.vim: idのみを出力</td></tr>
+<tr><th>,tc</th><td>endtagcomment.vim: classのみを出力</td></tr>
+</table>
+
+※詳しい説明は[.vim/plugin/endtagcomment.vim](https://github.com/sigwyg/Vim-Starter-kit/blob/master/.vim/plugin/endtagcomment.vim)にて
+
 
 ## 備考
 
