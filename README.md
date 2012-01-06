@@ -7,7 +7,7 @@ Vim Starter-Kit
     │   └── pathogen.vim
     ├── bundle
     │   ├── gundo.vim
-    │   ├── html5.vim/
+    │   ├── html5.vim
     │   ├── jslint.vim
     │   ├── neocomplcache
     │   ├── nerdtree
@@ -17,7 +17,7 @@ Vim Starter-Kit
     │   ├── vim-fontzoom
     │   ├── vim-qfreplace
     │   ├── vim-surround
-    │   ├── scss-syntax.vim/
+    │   ├── scss-syntax.vim
     │   └── zencoding-vim
     ├── colors
     │   └── ir_black.vim
