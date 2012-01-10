@@ -6,25 +6,25 @@ Vim Starter-Kit
     ├── autoload
     │   └── pathogen.vim
     ├── bundle
+    │   ├── QuickBuf
+    │   ├── Sass
+    │   ├── endtagcomment.vim
     │   ├── gundo.vim
     │   ├── html5.vim
     │   ├── jslint.vim
+    │   ├── matchit.vim
     │   ├── neocomplcache
     │   ├── nerdtree
+    │   ├── scss-syntax.vim
     │   ├── snipmate.vim
     │   ├── vim-alignta
     │   ├── vim-css3-syntax
     │   ├── vim-fontzoom
     │   ├── vim-qfreplace
     │   ├── vim-surround
-    │   ├── scss-syntax.vim
     │   └── zencoding-vim
-    ├── colors
-    │   └── ir_black.vim
-    ├── ftplugin
-    │   └── html.vim
-    └── plugin
-        └─ endtagcomment.vim
+    └── colors
+       └── ir_black.vim
 
 1. Macならホームディレクトリ(~/)に。
    WinならGVimフォルダ内のvimfilesにコピったり、\_vimrcとして設置してください。
