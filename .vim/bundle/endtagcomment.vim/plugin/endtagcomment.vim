@@ -1,22 +1,41 @@
+" -------------------------------------------------------------
 " endtagcomment.vim
+"  - https://gist.github.com/734448
+"  - created by @hokaccha
+"  - folked by @kosei27
+"  
+" -------------------------------------------------------------
+" update: 2010-12-08 @kosei27
+" -------------------------------------------------------------
+"
 " こういうHTMLがあったときに
-" <div id="hoge" class="fuga">
-" ...
-" </div>
+"
+"       <div id="hoge" class="fuga">
+"       ...
+"       </div>
 "
 " 実行するとこうなる
-" <div id="hoge" class="fuga">
-" ...
-" <!-- /div#hoge.fuga --></div>
 "
-" ----------
-" update:2010-12-08 @kosei27
+"       <div id="hoge" class="fuga">
+"       ...
+"       <!-- /div#hoge.fuga --></div>
 "
+" -------------------------------------------------------------
 " ,ti でidのみを出力
 " ,tc でclassのみを出力(",tt" ",t" も同様)
 " ,ta でidとclassを出力
 " ,t<Space> でコメント内のテキストの前後の空白をトグル
 " <!--/hoge-->  <->  <!-- /hoge -->
+" -------------------------------------------------------------
+
+nnoremap ,ti :<C-u>call Endtagcomment('id')<CR>
+nnoremap ,tc :<C-u>call Endtagcomment('class')<CR>
+nnoremap ,ta :<C-u>call Endtagcomment('id_class')<CR>
+nnoremap ,tg :<C-u>call Endtagcomment('tag_id_class')<CR>
+nmap     ,tt :<C-u>normal ,tc<CR>
+nnoremap <silent> ,t.  :<C-u>call Endtagcomment_firstclass_symbol_toggle()<CR>
+nnoremap <silent> ,t<Space>  :<C-u>call Endtagcomment_space_toggle()<CR>
+
 
 function! Endtagcomment(type)
     let reg_save = @@
@@ -81,14 +100,6 @@ endfunction
 
 "let g:endtagcommentFormat = '<!-- /%tag_name%id%class -->'
 
-"" keymap
-nnoremap ,ti  :<C-u>call Endtagcomment('id')<CR>
-nnoremap ,tc  :<C-u>call Endtagcomment('class')<CR>
-nnoremap ,ta  :<C-u>call Endtagcomment('id_class')<CR>
-nnoremap ,tg  :<C-u>call Endtagcomment('tag_id_class')<CR>
-
-nmap ,tt  :<C-u>normal ,tc<CR>
-
 
 " コメント内のテキストの前後の空白
 let g:endtagcomment_space = ''
@@ -101,8 +112,6 @@ function! Endtagcomment_space_toggle()
     let g:endtagcomment_space = ''
   endif
 endfunction
-""" keymap
-nnoremap <silent> ,t<Space>  :<C-u>call Endtagcomment_space_toggle()<CR>
 
 
 " コメント内のテキストの最初のclass名の「.」
@@ -116,5 +125,3 @@ function! Endtagcomment_firstclass_symbol_toggle()
     let g:endtagcomment_firstclass_symbol = ''
   endif
 endfunction
-"" keymap
-nnoremap <silent> ,t.  :<C-u>call Endtagcomment_firstclass_symbol_toggle()<CR>
