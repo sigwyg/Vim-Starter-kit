@@ -73,6 +73,7 @@ Vim Starter-Kit
 ## キーマップ(insert-mode)
 
 <table>
+<tr><th>&lt;C-y&gt;,</th><td>ZenCodingでHTML生成</td></tr>
 <tr><th>&lt;C-p&gt;</th><td>Vimのキーワード補完を手動起動</td></tr>
 <tr><th>&lt;C-j&gt;</th><td>Vimのオムニ補完を手動起動</td></tr>
 <tr><th>&lt;C-n&gt;</th><td>NeoComPlcacheの手動起動</td></tr>

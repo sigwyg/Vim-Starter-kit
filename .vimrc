@@ -25,7 +25,6 @@ syntax on
 
 colorscheme ir_black
 set cursorline
-highlight Normal guibg=grey5
 highlight FoldColumn ctermbg=8 guibg=grey5
 highlight CursorLine term=underline ctermbg=0 gui=underline guisp=#555566
 
