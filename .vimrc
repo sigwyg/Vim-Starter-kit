@@ -101,7 +101,7 @@ inoremap <Right> <Nop>
 " practice <Esc>
 noremap <C-c> <Nop>
 inoremap <C-c> <Nop>
-"inoremap jj <Esc>
+inoremap jj <Esc>
 
 " move
 nnoremap zl zL
@@ -168,7 +168,8 @@ nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
 cnoremap <C-p> <Up> 
 cnoremap <C-n> <Down> 
 cnoremap <Leader><Leader> ~/
-
+nnoremap ; :
+nnoremap : ;
 "}}}
 
 
@@ -410,7 +411,7 @@ let g:html5_aria_attributes_complete = 1
 " -----------------------------------------------------------------------
 " QuickBuf: {{{
 "  - https://github.com/vim-scripts/QuickBuf
-:let g:qb_hotkey = "<F4>"
+let g:qb_hotkey = "<F2>"
 "}}}
 
 
